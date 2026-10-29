@@ -1,0 +1,9 @@
+# deskfolk-dsh-autolaunch bundle patch
+#
+# `dsh.bundle.patch` 层：安装本包会把 `deskfolk-dsh-autolaunch` 追加进
+# `dsh.profile.bundles`，profile 启动时把下面这一行插件并入 cordis 配置。
+#
+# `id` 是 profile 行 id，同时也是 Host 设置命名空间，保持稳定不要改。
+- insert:
+    - id: deskfolk-dsh-autolaunch
+      name: deskfolk-dsh-autolaunch

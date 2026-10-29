@@ -1,0 +1,30 @@
+{
+  "name": "deskfolk-dsh-autolaunch",
+  "version": "0.1.0",
+  "description": "Start the Deskfolk desktop pet together with DeepSeek Harness when it is not already running",
+  "type": "module",
+  "main": "plugin.mjs",
+  "files": [
+    "plugin.mjs",
+    "launch.mjs",
+    "cordis.patch.yml",
+    "test.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "deskfolk",
+    "desktop-pet"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
