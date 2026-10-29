@@ -6,6 +6,8 @@ Deskfolk 官方只提供「随 Codex 启动」和「随 Claude Code 启动」两
 
 它 **不修改 Deskfolk**：不写它的文件、不打它的补丁，只读 `%APPDATA%\liquid-glass-pet\` 下的 `preferences.json` / `launch.json` / `bridge.json`，与官方 Claude Code 集成的做法一致。
 
+> 上游已经把同样的逻辑并进官方插件 `plugins/deskfolk-deepseek-harness`（PR：https://github.com/DeriitoMe/Deskfolk/pull/2 ）。如果你用的是包含该改动的 Deskfolk 版本，装上官方 DSH 插件就自带这个能力，**不需要再装本插件**；本仓库继续作为旧版本的补丁方案维护。
+
 ## 安装
 
 前置：Deskfolk 已安装并至少启动过一次；Deskfolk 的 DSH 接入插件 `deskfolk-deepseek-harness` 也已装好（它负责把会话事件推给桌宠）。
