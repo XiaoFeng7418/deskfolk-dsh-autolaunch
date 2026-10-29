@@ -18,6 +18,12 @@ git clone https://github.com/XiaoFeng7418/deskfolk-dsh-autolaunch.git C:\tools\d
 & "D:\DeepSeek Harness\resources\runtime\cli\bin\dsh.cmd" plugin --profile desktop add file:C:\tools\deskfolk-dsh-autolaunch
 ```
 
+不想 clone 也可以直接装 git 地址（pnpm 会拉一份快照，之后更新代码需要重装一次）：
+
+```powershell
+& "D:\DeepSeek Harness\resources\runtime\cli\bin\dsh.cmd" plugin --profile desktop add https://github.com/XiaoFeng7418/deskfolk-dsh-autolaunch.git
+```
+
 要点：
 
 - **必须用 Harness 资源目录里的 `dsh.cmd`**，不能用 npm 全局安装的 `dsh`。后者会拒绝操作桌面版 profile：
